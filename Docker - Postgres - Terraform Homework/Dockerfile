@@ -7,5 +7,4 @@ winpty docker run -it \
   postgres:13
 
 
-# then run : PGPASSWORD=root winpty pgcli -h localhost -p 5432 -U root -d ny_taxi
-# in git bash
+PGPASSWORD=root winpty pgcli -h localhost -p 5432 -U root -d ny_taxi
