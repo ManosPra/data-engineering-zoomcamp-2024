@@ -1,21 +1,11 @@
 
 version: 2
 
-models:
+sources:
     - name: staging
-      description: "A starter dbt model"
-      columns:
-          - name: id
-            description: "The primary key for this table"
-            tests:
-                - unique
-                - not_null
+      database: gothic-avenue-412217
+      schema: trips_data_all
 
-    - name: my_second_dbt_model
-      description: "A starter dbt model"
-      columns:
-          - name: id
-            description: "The primary key for this table"
-            tests:
-                - unique
-                - not_null
+      tables:
+          - name: green_tripdata
+          - name: yellow_tripdata
